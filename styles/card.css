@@ -1,0 +1,44 @@
+.card{
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+.card-top .card-img img{
+    transition: .5s ease;
+    width: 100%;
+    border-radius: 15px;
+    filter: brightness(0.4);
+}
+
+.card-title{
+    transition: .5s ease-in-out;
+    position: absolute;
+    transform: translateY(-150%);
+    text-align: center;
+    color: white;
+}
+
+.card-content{
+    transition: .5s ease-in-out;
+    display: none;
+    transform: translateY(-150%);
+}
+
+/*======= hovers =====*/
+.card:hover .card-top .card-img img{
+    transition: .5s ease;
+    width: 100%;
+    filter: none;
+}
+
+.card:hover .card-title{
+    transition: .5s ease-in-out;
+    transform: translateY(0px);
+    color: black;
+    position: relative;
+}
+
+.card:hover .card-content{
+    display: flex;
+    transform: translateY(0%);
+}
